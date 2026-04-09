@@ -75,7 +75,7 @@ CREATE VIEW export_genre_attractiveness AS
     ORDER BY 
         "attractiveness_score" DESC;
 
-\copy (SELECT * FROM export_genre_attractiveness) TO 'C:/Users/samue/OneDrive/Documents/coding_projects/video_game_sales/03_results/genre_attractiveness.csv' WITH CSV HEADER;
+\copy (SELECT * FROM export_genre_attractiveness) TO '/path/to/video_game_sales/03_results/genre_attractiveness.csv' WITH CSV HEADER;
 
 
 CREATE VIEW export_market_share_zscore AS 
@@ -94,7 +94,7 @@ CREATE VIEW export_market_share_zscore AS
         "genre" ASC,
         "year" ASC
 ;
-\copy (SELECT * FROM export_market_share_zscore) TO 'C:/Users/samue/OneDrive/Documents/coding_projects/video_game_sales/03_results/market_share_zscore.csv' WITH CSV HEADER;
+\copy (SELECT * FROM export_market_share_zscore) TO '/path/to/video_game_sales/03_results/market_share_zscore.csv' WITH CSV HEADER;
 
 
 CREATE VIEW export_market_trend AS
@@ -115,7 +115,7 @@ CREATE VIEW export_market_trend AS
     GROUP BY m."genre"
     ORDER BY trending_slope DESC
 ;
-\copy (SELECT * FROM export_market_trend) TO 'C:/Users/samue/OneDrive/Documents/coding_projects/video_game_sales/03_results/market_trend.csv' WITH CSV HEADER;
+\copy (SELECT * FROM export_market_trend) TO '/path/to/video_game_sales/03_results/market_trend.csv' WITH CSV HEADER;
 
 CREATE VIEW export_publisher_dominance AS 
     \set genre_start 2006
@@ -155,7 +155,7 @@ CREATE VIEW export_publisher_dominance AS
         ROUND("hhi", 4) AS "pub_hhi" -- measures distribution of sales over publishers, low hhi less dominance
     FROM "genre_stats"
     ORDER BY "hhi" ASC;
-\copy (SELECT * FROM export_publisher_dominance) TO 'C:/Users/samue/OneDrive/Documents/coding_projects/video_game_sales/03_results/publisher_dominance.csv' WITH CSV HEADER;
+\copy (SELECT * FROM export_publisher_dominance) TO '/path/to/video_game_sales/03_results/publisher_dominance.csv' WITH CSV HEADER;
 
 CREATE VIEW export_top_new_entrants AS 
     SELECT 
@@ -169,7 +169,7 @@ CREATE VIEW export_top_new_entrants AS
     FROM new_entrant_performance_view
     ORDER BY "global_sales" DESC
     LIMIT 8;
-\copy (SELECT * FROM export_top_new_entrants) TO 'C:/Users/samue/OneDrive/Documents/coding_projects/video_game_sales/03_results/top_new_entrants.csv' WITH CSV HEADER;
+\copy (SELECT * FROM export_top_new_entrants) TO '/path/to/video_game_sales/03_results/top_new_entrants.csv' WITH CSV HEADER;
 
 CREATE VIEW export_entrant_performance AS 
     SELECT
@@ -181,7 +181,7 @@ CREATE VIEW export_entrant_performance AS
     -- WHERE "suspected_sequel" = FALSE --distribution hardly shifts when excluding suspected sequels +/- 1pct_of_total
     GROUP BY "entry_performance"
     ORDER BY "count" DESC;
-\copy (SELECT * FROM export_entrant_performance) TO 'C:/Users/samue/OneDrive/Documents/coding_projects/video_game_sales/03_results/entrant_performance.csv' WITH CSV HEADER;
+\copy (SELECT * FROM export_entrant_performance) TO '/path/to/video_game_sales/03_results/entrant_performance.csv' WITH CSV HEADER;
 
 CREATE VIEW export_market_accessability AS 
     SELECT
@@ -196,7 +196,7 @@ CREATE VIEW export_market_accessability AS
     FROM new_entrant_performance_view
     GROUP BY "genre"
     ORDER BY "breakout_rate_pct" DESC;
-\copy (SELECT * FROM export_market_accessability) TO 'C:/Users/samue/OneDrive/Documents/coding_projects/video_game_sales/03_results/market_accessability.csv' WITH CSV HEADER;
+\copy (SELECT * FROM export_market_accessability) TO '/path/to/video_game_sales/03_results/market_accessability.csv' WITH CSV HEADER;
 
 CREATE VIEW export_regional_skew AS 
     WITH totals AS (
@@ -218,7 +218,7 @@ CREATE VIEW export_regional_skew AS
     FROM game_sales_view, totals t
     GROUP BY "genre", t.total_na, t.total_eu, t.total_jp, t.total_other, t.total_global
 ;
-\copy (SELECT * FROM export_regional_skew) TO 'C:/Users/samue/OneDrive/Documents/coding_projects/video_game_sales/03_results/regional_skew.csv' WITH CSV HEADER;
+\copy (SELECT * FROM export_regional_skew) TO '/path/to/video_game_sales/03_results/regional_skew.csv' WITH CSV HEADER;
 
 CREATE VIEW export_regional_correlation AS
     WITH corr AS (
@@ -249,7 +249,7 @@ CREATE VIEW export_regional_correlation AS
     SELECT 'other', na_other, eu_other, jp_other, other, other_global FROM corr
     UNION ALL
     SELECT 'global', na_global, eu_global, jp_global, other_global, global FROM corr;
-\copy (SELECT * FROM export_regional_correlation) TO 'C:/Users/samue/OneDrive/Documents/coding_projects/video_game_sales/03_results/regional_correlation.csv' WITH CSV HEADER;
+\copy (SELECT * FROM export_regional_correlation) TO '/path/to/video_game_sales/03_results/regional_correlation.csv' WITH CSV HEADER;
 
 CREATE VIEW export_platform_comparison AS
     \set year_start 2006
@@ -276,7 +276,7 @@ CREATE VIEW export_platform_comparison AS
     GROUP BY "platform_name"
     ORDER BY "sales_per_release" DESC
 ;
-\copy (SELECT * FROM export_platform_comparison) TO 'C:/Users/samue/OneDrive/Documents/coding_projects/video_game_sales/03_results/platform_comparison.csv' WITH CSV HEADER;
+\copy (SELECT * FROM export_platform_comparison) TO '/path/to/video_game_sales/03_results/platform_comparison.csv' WITH CSV HEADER;
 
 CREATE VIEW export_platform_lifecycle AS
     SELECT
@@ -294,7 +294,7 @@ CREATE VIEW export_platform_lifecycle AS
         g."platform_name" ASC,
         g."year" ASC
 ;
-\copy (SELECT * FROM export_platform_lifecycle) TO 'C:/Users/samue/OneDrive/Documents/coding_projects/video_game_sales/03_results/platform_lifecycle.csv' WITH CSV HEADER;
+\copy (SELECT * FROM export_platform_lifecycle) TO '/path/to/video_game_sales/03_results/platform_lifecycle.csv' WITH CSV HEADER;
 
 CREATE VIEW export_genre_platform_relationship AS
     WITH genre_platform_stats AS (
@@ -329,5 +329,5 @@ CREATE VIEW export_genre_platform_relationship AS
         "platform_name",
         "genre_rank" ASC
 ;
-\copy (SELECT * FROM export_genre_platform_relationship) TO 'C:/Users/samue/OneDrive/Documents/coding_projects/video_game_sales/03_results/genre_platform_relationship.csv' WITH CSV HEADER;
+\copy (SELECT * FROM export_genre_platform_relationship) TO '/path/to/video_game_sales/03_results/genre_platform_relationship.csv' WITH CSV HEADER;
 
