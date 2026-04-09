@@ -248,6 +248,20 @@ More forgiving competitive conditions and a significant regional tailwind in Jap
 
 ---
 
+## Data Source
+
+1. Download the dataset from Kaggle:
+   [Video Game Sales — Kaggle](https://www.kaggle.com/datasets/gregorut/videogamesales)
+2. Place `vgsales.csv` inside the root folder
+
+Data is from user Gregory Smith, scraped from VGChartz. ~16,500 games with regional and global sales figures by platform, genre, and publisher.
+
+I do not own this dataset. It is used for educational and non-commercial purposes only.
+
+If you intend to use this data, please refer to the original source.
+
+---
+
 ## Setup & Reproduction
 
 **Prerequisites:** PostgreSQL 13+, psql command-line client
@@ -274,11 +288,6 @@ psql -d vgsales -f 02_queries/analysis_queries/market_opportunities.sql
 `explore_queries.sql` is informational — it documents the investigation that shaped the cleaning decisions and does not need to be re-run to reproduce the analysis.
 
 ---
-
-## Data Source
-
-[Video Game Sales — Kaggle](https://www.kaggle.com/datasets/gregorut/videogamesales)
-Gregory Smith, scraped from VGChartz. ~16,500 games with regional and global sales figures by platform, genre, and publisher.
 
 ## Limitations
 
