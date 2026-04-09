@@ -1,0 +1,13 @@
+genre,top5_publisher_sales,top5_publisher_share_percent,pub_hhi
+adventure,61.17,42.84,0.0529
+action,526.76,47.13,0.0642
+strategy,35.19,47.32,0.0644
+misc,359.54,64.15,0.1032
+fighting,127.79,67.34,0.1137
+racing,204.60,67.37,0.1164
+simulation,165.42,74.38,0.1307
+role-playing,346.99,67.37,0.1310
+puzzle,53.89,58.53,0.1590
+shooter,546.09,77.83,0.1958
+sports,659.83,81.51,0.2123
+platform,239.10,84.53,0.3271

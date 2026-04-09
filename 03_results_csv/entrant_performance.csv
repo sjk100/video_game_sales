@@ -1,0 +1,5 @@
+entry_performance,count,pct_of_total,avg_vs_median
+weak entry,130,50.78,0.23
+below median,53,20.70,0.66
+strong breakout,41,16.02,9.35
+above median,32,12.50,1.36
