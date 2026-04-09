@@ -81,7 +81,7 @@ Defines the normalised schema across five tables. The flat CSV has one row per g
 | `game_releases` | One row per game-platform-year combination |
 | `sales` | Regional and global sales figures keyed to a release |
 
-See `entity_relationship_diagram.png` for the full schema diagram.
+See [entity_relationship_diagram.png](./entity_relationship_diagram.png) for the full schema diagram.
 
 ### `01_structure/staging.sql`
 Creates two flat tables that mirror the CSV structure exactly:
