@@ -218,10 +218,10 @@ All analysis queries operate on `game_sales_view`, a flat view joining all five 
 
 | Signal | Shooter | Action | Role-Playing |
 |---|---|---|---|
-| Attractiveness score | ✅ Highest | ✅ High | ✅ Moderate |
+| Attractiveness score | ✅✅ Highest | ✅ High | ✅ Moderate |
 | Market share trend | ✅ Positive | ✅ Positive | ✅ Positive |
 | New entrant breakout rate | ❌ 11.11% (Low) | ✅ 38.71% (High) | ✴️ 18.18% (Moderate) |
-| Publisher concentration | ❌ High (>75%) | ✅ Low (<50%) | ✅ Low |
+| Publisher concentration | ❌ High (>75%) | ✅ Low (<50%) | ✴️ 67% |
 | Regional niche | — | — | ✅ Japan +16.82% |
 | Top genre on PS4 & XONE | ✅ Yes | ✅ Yes | — |
 
@@ -231,7 +231,7 @@ All analysis queries operate on `game_sales_view`, a flat view joining all five 
 Growing market share, lowest publisher concentration of the three shortlisted genres, and a moderate new entrant success rate. The genre's high game count means differentiation is essential — a generic action title is unlikely to succeed, but a distinctive one has a more level playing field than shooter.
 
 **Option B — Role-playing on PC (Japan-led strategy)**
-More forgiving competitive conditions and a significant regional tailwind in Japan. Lower total revenue ceiling than action but less crowded at publisher level and a more clearly defined audience. A successful Japanese launch could serve as a beachhead for broader expansion, with PC as a primary platform given role-playing's strong PC performance. Expand to PS4 later if successful enough to capture global interest.
+More forgiving competitive conditions and a significant regional tailwind in Japan. Lower total revenue ceiling than action but a more clearly defined audience. A successful Japanese launch could serve as a beachhead for broader expansion, with PC as a primary platform given role-playing's strong PC performance. Expand to PS4 later if successful enough to capture global interest.
 
 **Avoid:** Shooter (punishing for new entrants despite strong headline metrics), Platform, Strategy, Simulation, Racing, and Adventure.
 
