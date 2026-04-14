@@ -1,5 +1,5 @@
 # Findings: Video Game Market Entry Analysis
-> Analysis scoped to 2006–2016. All sales figures in millions of units. See [README.md](./README.md) for methodology and [README.md#limitations](./README.md#limitations) for data caveats.
+> Analysis scoped to 2006–2016. All sales figures in millions of units. See [README.md](./README.md) for methodology and [README.md#limitations](./README.md#limitations) for data caveats. These findings are visualised in a set of [Tableau dashboards](https://github.com/sjk100/video_game_sales_viz).
 
 ---
 
