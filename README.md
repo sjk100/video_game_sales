@@ -230,8 +230,8 @@ All analysis queries operate on `game_sales_view`, a flat view joining all five 
 **Option A — Action on PS4 & XONE (global strategy)**
 Growing market share, lowest publisher concentration of the three shortlisted genres, and a moderate new entrant success rate. The genre's high game count means differentiation is essential — a generic action title is unlikely to succeed, but a distinctive one has a more level playing field than shooter.
 
-**Option B — Role-playing on PC (Japan-led strategy)**
-More forgiving competitive conditions and a significant regional tailwind in Japan. Lower total revenue ceiling than action but a more clearly defined audience. A successful Japanese launch could serve as a beachhead for broader expansion, with PC as a primary platform given role-playing's strong PC performance. Expand to PS4 later if successful enough to capture global interest.
+**Option B — Role-playing on PC & 3DS (Japan-led strategy)**
+More forgiving competitive conditions and a significant regional tailwind in Japan. Lower total revenue ceiling than action but a more clearly defined audience. A successful Japanese launch could serve as a beachhead for broader expansion, with PC & 3DS as a primary platforms given role-playing's strong performance. Expand to PS4 later if successful enough to capture global interest.
 
 **Avoid:** Shooter (punishing for new entrants despite strong headline metrics), Platform, Strategy, Simulation, Racing, and Adventure.
 
