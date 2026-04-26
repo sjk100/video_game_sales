@@ -1,0 +1,19 @@
+Signal,Genre,Value
+Attractiveness Score,Shooter,✔✔ Highest
+Attractiveness Score,Action,✔ High
+Attractiveness Score,Role-playing,● Moderate
+Market Share Trend,Shooter,✔ +1.6
+Market Share Trend,Action,✔ +1.8
+Market Share Trend,Role-playing,✔ +0.4
+Publisher Concentration,Shooter,✖ >75%
+Publisher Concentration,Action,✔ <50%
+Publisher Concentration,Role-playing,● 67%
+New Entrant Breakout Rate,Shooter,✖ 11.11%
+New Entrant Breakout Rate,Action,✔ 38.71%
+New Entrant Breakout Rate,Role-playing,● 18.18%
+Japan Regional Niche,Shooter,✖
+Japan Regional Niche,Action,✖
+Japan Regional Niche,Role-playing,✔ +16.82%
+Top Genre on PS4 & XOne,Shooter,✔
+Top Genre on PS4 & XOne,Action,✔
+Top Genre on PS4 & XOne,Role-playing,✖
