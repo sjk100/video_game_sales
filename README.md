@@ -12,6 +12,8 @@ This project takes a flat CSV of video game sales rankings and transforms it int
 
 The analysis is structured across three dimensions — genre dynamics, publisher competition, and market opportunities (regional and platform) — each building toward a final recommendation.
 
+The findings from this analysis are visualised in a set of [Tableau dashboards](https://github.com/sjk100/video_game_sales_viz) — recommended as an entry point before reading the SQL.
+
 ---
 
 ## Repository Structure
